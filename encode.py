@@ -8,7 +8,7 @@ def encode_image(img_path, message, output_path):
 
     message += "###"  # End marker
     if len(message) > width * height:
-        print("[❌] Message too long to encode in this image.")
+        print("Message too long to encode in this image.")
         return
 
     data_index = 0
