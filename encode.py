@@ -6,7 +6,7 @@ def encode_image(img_path, message, output_path):
     pixels = encoded.load()
     width, height = img.size
 
-    message += "###"  # End marker
+    message += "###"
     if len(message) > width * height:
         print("Message too long to encode in this image.")
         return
